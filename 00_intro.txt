@@ -1,0 +1,4 @@
+A python manifest
+Uruchomienie Pycharm
+Kompilowany vs interpretowany
+Statyczne vs dynamiczne typowanie
