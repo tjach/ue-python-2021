@@ -2,24 +2,31 @@
 # value of that number. Update the variable by adding 20 to it. Re-examine the id, type,
 # and value. Did the id change? Did the value change?
 
+# var_float = 42.0
+# print(id(var_float))
+# var_float = "ala ma kota"
+# print(id(var_float))
+
+# zmienna: str = 42.0
+#
+# print(zmienna)
+
 
 # 2. Create a variable pointing to an empty list. Examine the id, type, and value of the list.
 # Append the number 300 to the list. Re-examine the id, type, and value. Did the id
 # change? Did the value change?
 
-from typing import Union, List
+def print_object_info(what: list):
+    print(what)
+    print(id(what))
+    print(type(what))
+    return True
 
 
-def identity(input_value: Union[float, List]):
-    print(f"Value: {input_value}, id: {id(input_value)}, type: {type(input_value)}")
+lista = list()
+print_object_info(lista)
 
+lista.append(300)
+print_object_info(lista)
 
-floating_point = 4.2
-identity(floating_point)
-floating_point = 4.3
-identity(floating_point)
-
-
-empty_list = []
-identity(empty_list)
 
