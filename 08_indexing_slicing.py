@@ -11,3 +11,5 @@
 
 # 3. Create a function, is_palindrome, to determine if a supplied word is the same if the letters are reversed.
 
+def is_palindrome(string):
+    return string == string[::-1]
